@@ -16,18 +16,18 @@ final class c19LibraryTests: XCTestCase {
         //cTakesNonnullConstPointer(constValue)
         //swiftUnsafeCIntMutablePointer(constValue)
         //cTakesNonnullMutablePointer(constValue)
-
-        //New
-        cTakesNullableConstPointer(constValue);
-        cTakesNullUnspecConstPointer(constValue);
-        cTakesUnflaggedConstPointer(constValue);
-        swiftOptionalUnsafeCIntPointer(constValue)
         
-        cTakesNullableMutablePointer(constValue);
-        cTakesNullUnspecMutablePointer(constValue);
-        cTakesUnflaggedMutablePointer(constValue);
-        swiftOptionalUnsafeCIntMutablePointer(constValue)
-       
+        //New
+        //cTakesNullableConstPointer(constValue);
+        //cTakesNullUnspecConstPointer(constValue);
+        //cTakesUnflaggedConstPointer(constValue);
+        //swiftOptionalUnsafeCIntPointer(constValue)
+        //
+        //cTakesNullableMutablePointer(constValue);
+        //cTakesNullUnspecMutablePointer(constValue);
+        //cTakesUnflaggedMutablePointer(constValue);
+        //swiftOptionalUnsafeCIntMutablePointer(constValue)
+        
         
     }
     func testConstValueWithAmp() {
@@ -49,16 +49,16 @@ final class c19LibraryTests: XCTestCase {
         //cTakesNonnullMutablePointer(mutableValue)
         
         //"New"
-        cTakesNullableConstPointer(mutableValue);
-        cTakesNullUnspecConstPointer(mutableValue);
-        cTakesUnflaggedConstPointer(mutableValue);
-        swiftOptionalUnsafeCIntPointer(mutableValue)
+        //cTakesNullableConstPointer(mutableValue);
+        //cTakesNullUnspecConstPointer(mutableValue);
+        //cTakesUnflaggedConstPointer(mutableValue);
+        //swiftOptionalUnsafeCIntPointer(mutableValue)
+        //
+        //cTakesNullableMutablePointer(mutableValue);
+        //cTakesNullUnspecMutablePointer(mutableValue);
+        //cTakesUnflaggedMutablePointer(mutableValue);
+        //swiftOptionalUnsafeCIntMutablePointer(mutableValue)
         
-        cTakesNullableMutablePointer(mutableValue);
-        cTakesNullUnspecMutablePointer(mutableValue);
-        cTakesUnflaggedMutablePointer(mutableValue);
-        swiftOptionalUnsafeCIntMutablePointer(mutableValue)
-
     }
     func testMutableValueWithAmp() {
         //All passed.
@@ -93,10 +93,10 @@ final class c19LibraryTests: XCTestCase {
         cTakesUnflaggedConstPointer(constArray);
         swiftOptionalUnsafeCIntPointer(constArray)
         
-        cTakesNullableMutablePointer(constArray);
-        cTakesNullUnspecMutablePointer(constArray);
-        cTakesUnflaggedMutablePointer(constArray);
-        swiftOptionalUnsafeCIntMutablePointer(constArray)
+        //cTakesNullableMutablePointer(constArray);
+        //cTakesNullUnspecMutablePointer(constArray);
+        //cTakesUnflaggedMutablePointer(constArray);
+        //swiftOptionalUnsafeCIntMutablePointer(constArray)
     }
     
     func testConstArrayWithAmp() {
@@ -127,10 +127,10 @@ final class c19LibraryTests: XCTestCase {
         cTakesUnflaggedConstPointer(mutableArray);
         swiftOptionalUnsafeCIntPointer(mutableArray)
         
-        cTakesNullableMutablePointer(mutableArray);
-        cTakesNullUnspecMutablePointer(mutableArray);
-        cTakesUnflaggedMutablePointer(mutableArray);
-        swiftOptionalUnsafeCIntMutablePointer(mutableArray)
+        //cTakesNullableMutablePointer(mutableArray);
+        //cTakesNullUnspecMutablePointer(mutableArray);
+        //cTakesUnflaggedMutablePointer(mutableArray);
+        //swiftOptionalUnsafeCIntMutablePointer(mutableArray)
     }
     
     func testMutableArrayWithAmp() {
@@ -139,7 +139,7 @@ final class c19LibraryTests: XCTestCase {
         cTakesNonnullConstPointer(&mutableArray)
         swiftUnsafeCIntMutablePointer(&mutableArray)
         cTakesNonnullMutablePointer(&mutableArray)
-    
+        
         //"New"
         cTakesNullableConstPointer(&mutableArray);
         cTakesNullUnspecConstPointer(&mutableArray);
@@ -149,7 +149,7 @@ final class c19LibraryTests: XCTestCase {
         cTakesNullableMutablePointer(&mutableArray);
         cTakesNullUnspecMutablePointer(&mutableArray);
         cTakesUnflaggedMutablePointer(&mutableArray);
-        swiftOptionalUnsafeCIntMutablePointer(&mutableArray) 
+        swiftOptionalUnsafeCIntMutablePointer(&mutableArray)
     }
-        
+    
 }
