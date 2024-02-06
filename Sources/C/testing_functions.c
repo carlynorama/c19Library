@@ -36,3 +36,11 @@ void cTakesNullUnspecMutablePointer(int * __null_unspecified foo) {
 void cTakesNullUnspecConstPointer(const int * __null_unspecified bar) {
     //printf("pointer: %p\n", bar);
 }
+
+//Warns, will live with it.
+void cTakesUnflaggedMutablePointer(int * foo) {
+    //printf("pointer: %p\n", foo);
+}
+void cTakesUnflaggedConstPointer(const int * bar) {
+    //printf("pointer: %p\n", bar);
+}

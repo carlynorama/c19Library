@@ -12,7 +12,16 @@
 
 
 //--------------------------------------------------- for_pointer_test
-void c_takesMutablePointer(int * _Nonnull);
-void c_takesConstPointer(const int * _Nonnull);
+void cTakesNonnullMutablePointer(int * __nonnull);
+void cTakesNonnullConstPointer(const int * __nonnull);
+void cTakesNullableMutablePointer(int * __nullable);
+void cTakesNullableConstPointer(const int * __nullable);
+void cTakesNullUnspecMutablePointer(int * __null_unspecified);
+void cTakesNullUnspecConstPointer(const int * __null_unspecified);
+
+//Warns, will live with it.
+void cTakesUnflaggedMutablePointer(int *);
+void cTakesUnflaggedConstPointer(const int *);
+
 
 #endif /* testing_functions_h */
